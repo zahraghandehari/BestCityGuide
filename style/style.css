@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+ }
+ body {
+     direction: ltr;
+     font-family: 'Varela Round', sans-serif;
+ }
+ a {
+     text-decoration: none;
+ }
+ ul ,
+ ol {
+     list-style: none;
+     padding: 0;
+ }
+ .wrapper {
+     width: 100%;
+     max-width: 1150px;
+     margin: 0 auto;
+     padding: 0 50px;
+ }
+ .header {
+     width: 100%;
+     background: #fff;
+     position: fixed;
+     z-index: 2;
+ }
+ .header .header-wrapper {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     padding: 30px 0;
+ }
+ .header .logo a {
+     color: #093a58;
+     font-size: 1.25em;
+     font-weight: bold;
+     line-height: 1.6;
+ }
+ .header .main-menu ul {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 55px;
+ }
+ .header .main-menu li a {
+     color: #3acec2;
+     font-size: 0.95em;
+     line-height: 1.6;
+     text-transform: uppercase;
+ }
+ .hero {
+     text-align: center;
+     background: #3acec2;
+     color: #fff;
+     padding-top: 140px;
+     padding-bottom: 50px;
+     margin-bottom: 60px;
+ }
+ .hero img {
+     width: 190px;
+ }
+ .hero h1 {
+     font-size: 2em;
+     margin-top: 1.2em;
+     font-weight: bold;
+ }
+ .hero p {
+     font-size: 1.4em;
+     line-height: 1.6;
+     margin: 5px;
+ }
+ .content .wrapper {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding: 10px 0;
+ }
+ .content .col {
+     padding: 0 20px;
+ }
+ .content .column1 {
+     width: 30%;
+ }
+ .content .column2 {
+     width: 40%;
+ }
+ .content .column3 {
+     width: 30%;
+ }
+ .content .col.column1 {
+    padding-right: 35px;
+}
+.content .col.column3 {
+    padding-left: 35px;
+}
+ .content h2 {
+     color: #093a58;
+     margin-bottom: 20px;
+ }
+ .content p {
+     color: #3a3a3a;
+     font-size: .95em;
+     line-height: 1.6;
+     margin-top: 10px;
+     margin-bottom: 20px;
+ }
+ .content p span {
+     font-weight: bold;
+ }
+ .content .column2 .holder {
+    position: relative;
+ }
+ .content .column2 .holder .extra-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(19, 43, 102, .85);
+    color: #fff;
+    padding: 10px;
+ }
+ .content .column2 .holder .extera-content h5 {
+    font-size: 0.9em;
+    line-height: 1px;
+ }
+ .content .column2 .holder .extra-content p {
+    color: #fff;
+    line-height: 13px;
+    font-size: 0.95em;
+    margin-bottom: 1.8em;
+ }
+ .footer {
+    background: #d9e4ea;
+    text-align: center;
+    padding: 2em 0;
+    margin-top: 30px;
+ }
+ @media (max-width: 925px) {
+    .content .column1,
+    .content .column2 {
+        width: 50%;
+    }
+    .content .column3{
+        width: 100%;
+    }
+    .header .main-menu ul {
+        gap: 35px;
+    }
+ }
+ @media (max-width: 750px) {
+    .content .column1,
+    .content .column2 {
+        width: 100%;
+    }
+    .header .header-wrapper {
+        display: block;
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header .logo {
+        margin-bottom: 20px;
+    }
+    .header .main-menu ul {
+        gap: 20px;
+    }
+    .header .main-menu li a {
+        font-size: 0.8em;
+    }
+    .hero {
+        margin-bottom: 0;
+        padding-top: 185px;
+    }
+    .content h2 {
+        margin-top: 20px;
+    }
+ }
+ @media (max-width: 620px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .header .header-wrapper {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header .main-menu ul {
+        gap: 5px;
+    }
+    .header .main-menu li a {
+        font-size: 0.8em;
+    }
+    .hero {
+        padding: 170px 20px 40px 20px;
+    }
+    .hero h1 {
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    .hero p {
+        font-size: 1.2em;
+        padding: 0 20px;
+    }
+    .content .column2 .holder .extra-content {
+        padding: 10px 20px;
+    }
+    .content .column2 .holder .extra-content p {
+        margin-bottom: 5px;
+        font-size: 0.8em;
+    }
+ }

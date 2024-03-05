@@ -1,0 +1,161 @@
+  @font-face {
+    font-family: vazir;
+    src: url("font/vazir/Vazirmatn-ExtraLight.woff2") format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: vazir;
+    src: url('font/vazir/Vazirmatn-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }  
+  @font-face {
+    font-family: vazir;
+    src: url('font/vazir/Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: vazir;
+    src: url('font/vazir/Vazirmatn-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: black;
+    color: #fff;
+    direction: rtl;
+    font-family: 'vazir';
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 4;
+}
+.header .wrapper {
+    padding: 0 20px;
+}
+.header .header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-wrapper .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.header-wrapper .left .login {
+    background: #e0e0e0;
+    text-align: center;
+    padding: 5px;
+}
+.header-wrapper .left .shopping {
+    background: #1cb561;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.header-wrapper .left .shopping .shopping {
+    height: 18px;
+}
+.header-wrapper .right {
+    display: flex;
+    align-items: center;
+    width: 463.13px;
+    gap: 100px;
+}
+.header-wrapper .right .logo {
+    /*margin: 0 40px;*/
+}
+.header-wrapper .right .logo img {
+    width: 80px;
+}
+.header-wrapper .right .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-wrapper .right .menu .tour {
+    display: flex;
+    flex: 0 1 25%;
+    gap: 2px;
+}
+.header-wrapper .right .menu .tour .tour {
+    width: 30%;
+}
+.header-wrapper .right .menu .school {
+    display: flex;
+    flex: 0 1 25%;
+    gap: 2px;
+}
+.header-wrapper .right .menu .school .school {
+    width: 30%;
+}
+.header-wrapper .right .menu .search {
+    display: flex;
+    flex: 0 1 25%;
+    gap: 2px;
+}
+.header-wrapper .right .menu .search .search {
+    width: 30%;
+}
+.hero {
+    padding-top: 90px;
+    background-image: url(https://static.cdn.asset.filimo.com/flmt/mov_cvr_141218_6942.jpg?width=1920&quality=90&secret=j3CcykNiDaR5jiuDhEHvvA);
+    background-size: cover;
+    position: relative;
+}
+.hero .img-transparent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1 , 1 , 1 , .6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hero .hero-content-wrapper {
+    padding-right: 175px;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    position: relative;
+    z-index: 3;
+}
+.hero .hero-content-wrapper .content {
+    display: flex;
+    flex-direction: column;
+    height: 345px;
+    justify-content: space-between;
+}
+.hero .hero-content-wrapper img {
+    width: 240px;
+}
+.hero .hero-content-wrapper .content h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.hero .hero-content-wrapper .content ._1 {
+    width: 117.33px;
+    height: 20px;
+}
